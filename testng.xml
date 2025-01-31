@@ -5,6 +5,7 @@
         <classes>
             <class name="org.ParaBank.RegisterUser">
                 <methods>
+                    <include name="testRegisterUserWithIncorrectPassword"/>
                     <include name="testRegisterNewUser"/>
                 </methods>
             </class>
