@@ -12,10 +12,20 @@ import java.time.Duration;
 
 public class TestUtils {
 
+    /**
+     * Method to wait for the element
+     * @return webDriverWait
+     * @autor shchak
+     */
     public static WebDriverWait waitForElement(){
         return  new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(60));
     }
 
+    /**
+     * Method to click on hyper link
+     * @param Text hyper link text
+     * @autor shchak
+     */
     public static void clickOnHyperLink(String Text){
         try{
             WebElement element=waitForElement().until(ExpectedConditions.elementToBeClickable(LocatorsUtils.getLocatorByHref(Text)));
@@ -30,6 +40,11 @@ public class TestUtils {
         }
     }
 
+    /**
+     * Method to enter text in input box
+     * @param ID @id of a locator
+     * @param Text text to be entered in input box
+     */
     public static void fillInputBox(String ID,String Text){
         try{
             WebElement element=waitForElement().until(ExpectedConditions.elementToBeClickable(LocatorsUtils.getLocatorById(ID)));
@@ -44,6 +59,11 @@ public class TestUtils {
         }
     }
 
+    /**
+     * Method to click on button
+     * @param type  type of button
+     * @param value value of button
+     */
     public static void clickButton(String type, String value){
         try{
             WebElement element=waitForElement().until(ExpectedConditions.elementToBeClickable(LocatorsUtils.getLocatorByTypeAndValue(type,value)));
@@ -55,6 +75,20 @@ public class TestUtils {
         }
     }
 
+    /**
+     * Method to register new user
+     * @param firstName first name of new registered user
+     * @param lastName last name of new registered user
+     * @param address  address of new registered user
+     * @param city city of new registered user
+     * @param state state of new registered user
+     * @param zipCode zip code of new registered user
+     * @param phoneNumber phone number of new registered user
+     * @param ssn ssn of new registered user
+     * @param username username of new registered user
+     * @param password password of new registered user
+     * @param cnfPassword conform password of new registered user
+     */
     public static void registerNewUser(String firstName, String lastName, String address, String city, String state, String zipCode, String phoneNumber, String ssn, String username, String password, String cnfPassword) {
         clickOnHyperLink(Locator.Registration_HyperLink);
         fillInputBox(Locator.Registration_FirstName, firstName);
@@ -71,6 +105,10 @@ public class TestUtils {
         clickButton(Locator.Button_Type,Locator.Registration_BtnType);
     }
 
+    /**
+     * Method to verify text
+     * @param text text to be verified
+     */
     public static void verifyText(String text){
         WebElement element=waitForElement().until(ExpectedConditions.elementToBeClickable(LocatorsUtils.LocatorByText(text)));
         Assert.assertEquals(element.getText(),text);

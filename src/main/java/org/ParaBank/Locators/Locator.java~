@@ -15,4 +15,8 @@ public class Locator {
     public static final String Registration_PhoneNo ="customer.phoneNumber";
     public static final String Button_Type="submit";
     public static final String Registration_BtnType="Register";
+
+
+
+
 }
