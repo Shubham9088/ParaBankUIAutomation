@@ -1,0 +1,1 @@
+{"uuid":"729617df-3535-4c55-8813-055d461651c7","name":"org.ParaBank.BaseTest.setUp","children":["270e6475-e8bc-4964-97d8-0fdb584fb629"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1739980140527,"stop":1739980151003}],"afters":[],"start":1739980140527,"stop":1739980151005}

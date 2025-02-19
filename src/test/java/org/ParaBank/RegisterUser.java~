@@ -26,5 +26,5 @@ public class RegisterUser extends BaseTest{
         TestUtils.login("abc","abc");
         TestUtils.verifyText("The username and password could not be verified.");
     }
-
+    
 }

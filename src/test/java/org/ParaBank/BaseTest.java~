@@ -21,7 +21,6 @@ public class BaseTest{
 
     @AfterMethod
     public void tearDown(){
-        // close browser
         DriverManager.getDriver().quit();
     }
 }

@@ -20,7 +20,7 @@ public class LocatorsUtils {
         return By.xpath(String.format("//*[contains(text(),'%s')]",text));
     }
 
-    public static By getLocatorByName(String name){
+    public static By LocatorByName(String name){
         return By.xpath(String.format("//*[@name='%s']",name));
     }
 }

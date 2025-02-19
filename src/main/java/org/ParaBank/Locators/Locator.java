@@ -14,5 +14,10 @@ public class Locator {
     public static final String Registration_ConformPassword ="repeatedPassword";
     public static final String Registration_PhoneNo ="customer.phoneNumber";
     public static final String Button_Type="submit";
-    public static final String Registration_BtnType="Register";
+    public static final String Registration_BtnName ="Register";
+    public static final String Login_Password="password";
+    public static final String Login_Username="username";
+    public static final String Login_BtnName="Log In";
+
+
 }
