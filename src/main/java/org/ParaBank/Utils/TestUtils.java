@@ -110,7 +110,6 @@ public class TestUtils {
 
     /**
      * Method to verify text
-     *
      * @param text text to be verified
      */
     public static void verifyText(String text) {
@@ -135,7 +134,8 @@ public class TestUtils {
     }
 
     /**
-     * login
+     * login to para bank
+     * @author shchak
      */
     public static void login(String username, String password) {
         WebElement usernameLoc = waitForElement().until(ExpectedConditions.elementToBeClickable(LocatorsUtils.getLocatorByName(Locator.Login_Username)));
