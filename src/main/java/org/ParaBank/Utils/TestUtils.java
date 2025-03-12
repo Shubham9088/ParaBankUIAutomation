@@ -1,12 +1,11 @@
 package org.ParaBank.Utils;
-
+import org.testng.Assert;
 import org.ParaBank.Locators.Locator;
 import org.ParaBank.Locators.LocatorsUtils;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import java.time.Duration;
 
